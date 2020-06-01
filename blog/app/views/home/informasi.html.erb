@@ -1,0 +1,9 @@
+<h1><%=@judul%></h1>
+<hr/>
+<p><%=@isi%></p>
+<p>Daftar Produk Populer saat ini </p>
+<ul>
+<% @produk.each do |mv| %>
+    <li><%= mv[:tipe] %> : <%= mv[:nama] %> </li>
+<% end %>
+</ul>
